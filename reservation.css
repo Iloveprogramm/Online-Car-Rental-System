@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    background: linear-gradient(270deg, #1a1a1a, #333333);
+    background-size: 200% 200%;
+    animation: flow 5s ease-in-out infinite;
+}
+
+.nav-item-left {
+    text-align: left;  /* Aligns text to the left */
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fafafa;
+}
+
+.nav-item-center {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fafafa;
+}
+  
+.car-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #333; 
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.car-table th {
+    text-transform: uppercase;
+    padding: 20px;
+    color: #fff;
+    background-color: #4b4a4a; 
+}
+
+.car-table td {
+    border: 1px solid #f2f2f2;
+    text-align: left;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.car-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.car-table tr:hover td {
+    background-color: #ddd; 
+}
+
+.car-image {
+    width: 100px;
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.rental-days {
+    width: 50px;
+    border: none; 
+    border-bottom: 1px solid #333; 
+    background-color: transparent; 
+    outline: none; 
+}
+
+.btn-delete-reserve {
+    padding: 10px 20px; 
+    color: #fff; 
+    background-color: #333; 
+    border: none; 
+    border-radius: 2px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-delete-reserve:hover {
+    background-color: #555; 
+}
+
+.btn-proceed-checkout {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-proceed-checkout:hover {
+    background-color: #555;
+}
+
+.empty-cart-message {
+    font-size: 20px;
+    color: #f31e1e;
+    text-align: center;
+    padding: 20px;
+}
+
+.total-price {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 20px;
+    margin-top: 20px;
+}
